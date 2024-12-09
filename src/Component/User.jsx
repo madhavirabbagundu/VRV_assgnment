@@ -9,12 +9,7 @@ function User(){
     const navigate = useNavigate(); 
     const [data,setData] = React.useState([])
 
-const [Active,setActive] = React.useState()
-const [Inactive,setInactive] = React.useState('')
-const [id,setId] = React.useState('')
-const [status,setStatus] = React.useState()
-const [editingData,setEditingData] = React.useState([]);
-const [update,setUpdate] = React.useState(false);
+
 
 const [dataStore,setDataStore] = React.useState({
     name:"",
@@ -57,29 +52,7 @@ fetch(`http://localhost:3000/userData`)
 .then((json)=>setData(json))
 
 },[])
-// const handleDelete=(id)=>{
-// if(id > 0){
-//     if(window.confirm("Are you Delete this item?!")){
-//         const filterData = data.filter(item=>item.id!==id);
-//         setData(filterData)
 
-//     }
-// }
-// }
-// var {name,role} = data
-
-// const handleEdit=(id)=>{
-// const editData = data.filter(item => item.id === id);
-// const {name,role,status} = editData
-
-// if(editData !== undefined){
-// // Navigate("/InputUser")
-// setId(id)
-// setEditingData(editData[0])
-// setUpdate(true);
-// setData(editData[0])
-// }
-// }
 
 
 const {name,role} = dataStore;
@@ -108,18 +81,7 @@ const {name,role} = dataStore;
             value = {role}
             />
              </span><br/>
-{/* 
-           { editingData.status === "Active" ? 
 
-             <span>Active 
-            <input type = "Radio"
-            name = "Status"
-            value = {Active}
-            onChange={handleChange}
-            checked
-            />
-            </span> 
-            : */}
 
 
             <span>Active : 
@@ -128,20 +90,7 @@ const {name,role} = dataStore;
             value = "Active"
             onChange={handleChange}   />
              </span>
-{/* } */}
 
-{/* { editingData.status === "Inactive" ? 
-            <span>InActive : 
-            <input type = "radio"
-            name = "Status"
-            value = {Inactive}
-            onChange={handleChange}
-             checked
-            />
-            </span>
-            
-
-            : */}
             <span>InActive : 
             <input type = "radio"
             name = "Status"
@@ -152,12 +101,9 @@ const {name,role} = dataStore;
             </span>
             <br/>
 
-{/* } */}
             <button type = "submit" value = "submit"  className="SubmitButton">Submit</button>
-            {/* <button type = "submit" value = "update" onClick={()=>handleSave()}  className="SubmitButton">Update</button> */}
 
             </form>
-         {/* </div> */}
 
        
         

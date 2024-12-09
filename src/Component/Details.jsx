@@ -24,19 +24,7 @@ const handleDelete=(id)=>{
         }
     }
 }
-// const handleEdit=(id)=>{
-// const editData = data.filter(item => item.id === id);
-// if(editData !== undefined){
-//     Navigate("/InputUser")
-//     setName(editData.name)
-//     setRole(editData[0].role)
-//     setStatus(editData[0].status)
-//     setId(editData[0].id)
-//     console.log(editData)
 
-
-// }
-// }
    
     return(
         <>
