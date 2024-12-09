@@ -1,0 +1,28 @@
+{
+  "userData": [
+    {
+      "id": 1,
+      "name": "user1",
+      "role": "web developer",
+      "Status": "Active"
+    },
+    {
+      "name": "Geetha",
+      "role": "jkdfg",
+      "Status": "Active",
+      "id": 2
+    },
+    {
+      "name": "Madhavi Rabbagundu",
+      "role": "former",
+      "Status": "Inactive",
+      "id": 3
+    },
+    {
+      "name": "chaithu",
+      "role": "analyst developer",
+      "Status": "Inactive",
+      "id": 4
+    }
+  ]
+}
